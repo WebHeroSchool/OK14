@@ -1,15 +1,15 @@
 h1{
-font-family:'PT Serif',serif;
+  font-family:'PT Serif',serif;
 }
 p{
-font-family:'Roboto',sans-serif;
+  font-family:'Roboto',sans-serif;
 }
 .wrapper{
- margin:auto;
- width:80%;
+  margin:auto;
+  width:80%;
 }
 body{
-margin:0;
+  margin:0;
 }
 .menu__item{
   position:relative;
