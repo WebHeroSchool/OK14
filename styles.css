@@ -1,120 +1,120 @@
-h1{
-  font-family:'PT Serif',serif;
+h1 {
+  font-family: 'PT Serif',serif;
 }
-p{
-  font-family:'Roboto',sans-serif;
+p {
+  font-family: 'Roboto',sans-serif;
 }
-.wrapper{
-  margin:auto;
-  width:80%;
+.wrapper {
+  margin: auto;
+  width: 80%;
 }
-body{
-  margin:0;
+body {
+  margin: 0;
 }
-.menu__item{
-  position:relative;
-  margin-right:25px;
-  margin-top:4px;
-  font:19px/29px'Roboto',arial,helvetica,sans-serif;
-  color:#000;
-  text-decoration:none;
-  transition:opacity.5s;
+.menu__item {
+  position: relative;
+  margin-right :25px;
+  margin-top :4px;
+  font: 19px/29px'Roboto',arial,helvetica,sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity.5s;
 }
-header{
-  display:flex;
-  justify-content:space-between;
-  margin-bottom:107px;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 107px;
 }
-.logo{
-  position:relative;
-  padding:38px 0;
-  padding-left:48px;
-  font:bold 24px/33px pt_serif,arial,helvetica,sans-serif;
+.logo {
+  position: relative;
+  padding: 38px 0;
+  padding-left: 48px;
+  font: bold 24px/33px pt_serif,arial,helvetica,sans-serif;
 }
-.menu{
-  display:flex;
-  align-items:center;
+.menu {
+  display: flex;
+  align-items: center;
 }
-.menu__item:last-child{
-  margin-right:0.5vw;
+.menu__item: last-child {
+  margin-right: 0.5vw;
 }
-.logo__circle{
-  width:30px;
-  height:30px;
-  position:absolute;
-  top:50%;
-  left:0;
-  transform:translateY(-50%);
-  border-radius:50%;
-  opacity:.7;
+.logo__circle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: .7;
 }
-.logo__circle_color_blue{
-  left:11px;
-  top:56%;
-  background:#C8DBFB
+.logo__circle_color_blue {
+  left: 11px;
+  top: 56%;
+  background: #C8DBFB
 }
-.logo__circle_color_dark-blue{
-  background:#0056EC
+.logo__circle_color_dark-blue {
+  background: #0056EC
 }
-.menu__item::after{
-  position:absolute;
-  left:0;
-  display:block;
-  content:'';
-  width:0;
-  height:3px;
-  background:#0056EC;
-  opacity:0;
-  transition:opacity.5s,width.5s;
+.menu__item::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity.5s,width.5s;
 }
-.menu__item:hover::after{
-  opacity:1;
-  width:100%;
+.menu__item:hover::after {
+  opacity: 1;
+  width: 100%;
 }
-.menu__item:hover{
+.menu__item:hover {
   opacity:.5;
 }
 .menu__item_active::after {
-  position:absolute;
-  display:block;
-  content:'';
-  width:100%;
-  height:3px;
-  left:0;
-  background:#0056EC;
-  opacity:1;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background: #0056EC;
+  opacity: 1;
 }
-.main{
-  padding:100px 66% 100% 0;
-  background:top 2% right .5% no-repeat url(img/mainlmg.svg);
+.main {
+  padding: 100px 66% 100% 0;
+  background: top 2% right .5% no-repeat url(img/mainlmg.svg);
 }
-.main__title{
-  font:bold 66px/86px 'PT Serif',arial,helvetica,sans-serif;
-  color:#000;
-  margin:0 0 39px 0;
-  margin-left:3px;
+.main__title {
+  font: bold 66px/86px 'PT Serif',arial,helvetica,sans-serif;
+  color: #000;
+  margin: 0 0 39px 0;
+  margin-left: 3px;
 }
-.main__subtitle{
-  font:22.5px/26px'Roboto',arial,helvetica,sans-serif;
-  color:#000;
-  margin:0 0 42px 0;
-  width:87%;
-  margin-left:2px;
+.main__subtitle {
+  font: 22.5px/26px'Roboto',arial,helvetica,sans-serif;
+  color: #000;
+  margin: 0 0 42px 0;
+  width: 87%;
+  margin-left: 2px;
 }
-.main__button{
-  display:inline-block;
-  font:18px/21px 'Roboto',arial,helvetica,sans-serif;
-  color:#FFF;
-  background:#0056EC;
-  padding:16px 37px 20px 24px;
-  text-decoration:none;
-  border-radius:4px;
-  transition:opasity.5s;
-  margin-left:4px;
+.main__button {
+  display: inline-block;
+  font: 18px/21px 'Roboto',arial,helvetica,sans-serif;
+  color: #FFF;
+  background: #0056EC;
+  padding: 16px 37px 20px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opasity.5s;
+  margin-left: 4px;
 }
-.main__title-text_highlight{
-  background:#ECF3FF;
+.main__title-text_highlight {
+  background: #ECF3FF;
 }
-.main__button:hover{
-  opacity:.5;
+.main__button:hover {
+  opacity: .5;
 }
