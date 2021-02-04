@@ -202,16 +202,16 @@ header {
     padding-left: 44px;
   }
 
-  .menu__item:last-child {
-    margin-right: -1.4vw;
-  }
-
   .logo__circle {
     left: 0.5%;
   }
 
   .menu__item {
     margin-top: 9px;
+  }
+
+  .menu__item:last-child {
+    margin-right: -1.4vw;
   }
 
   header {
