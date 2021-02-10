@@ -18,8 +18,8 @@ body {
 }
 
 #menu__toggle {
-    display: none;
-  }
+  display: none;
+}
 
 .menu__item {
   position: relative;
@@ -148,8 +148,8 @@ header {
 
 @media (max-width: 1366px) {
   body {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
   .wrapper {
     width: 69%;
@@ -302,8 +302,8 @@ header {
   }
 
   .menu__btn,
-  .menu__btn:before,
-  .menu__btn:after {
+  .menu__btn::before,
+  .menu__btn::after {
     display: block;
     position: absolute;
     width: 25px;
@@ -311,12 +311,12 @@ header {
     background-color: #0056ec;
   }
 
-  .menu__btn:before {
+  .menu__btn::before {
     content: '';
     top: -7px;
   }
 
-  .menu__btn:after {
+  .menu__btn::after {
     content: '';
     top: 7px;
   }
@@ -325,12 +325,12 @@ header {
     transform: rotate(45deg);
   }
 
-  #menu__toggle:checked ~ .menu__btn:before {
+  #menu__toggle:checked ~ .menu__btn::before {
     top: 0;
     transform: rotate(0);
   }
 
-  #menu__toggle:checked ~ .menu__btn:after {
+  #menu__toggle:checked ~ .menu__btn::after {
     top: 0;
     transform: rotate(90deg);
   }
