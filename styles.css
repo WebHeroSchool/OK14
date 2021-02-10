@@ -6,13 +6,19 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+}
+
 .wrapper {
   margin: auto;
   width: 80%;
 }
 
-body {
-  margin: 0;
+#menu__toggle {
+  display: none;
 }
 
 .menu__item {
@@ -28,7 +34,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 107px;
+  margin-bottom: 131px;
 }
 
 .logo {
@@ -101,8 +107,8 @@ header {
 }
 
 .main {
-  padding: 100px 66% 100% 0;
-  background: top 2% right 0.5% no-repeat url(img/mainlmg.svg);
+  padding: 77px 66% 130px 0;
+  background: top right no-repeat url(img/mainlmg.svg);
 }
 
 .main__title {
@@ -138,4 +144,227 @@ header {
 
 .main__button:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 1366px) {
+  body {
+    overflow: hidden;
+  }
+
+  .wrapper {
+    width: 69%;
+  }
+
+  header {
+    margin-bottom: 86px;
+  }
+
+  .logo {
+    padding-left: 53px;
+  }
+
+  .logo__circle {
+    left: 5%;
+  }
+
+  .menu__item {
+    margin-top: 8px;
+    font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
+    margin-right: 27px;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0.7vw;
+  }
+
+  .main {
+    padding: 0 54% 20% 5px;
+    background-size: 55%;
+    background-position: top right;
+  }
+
+  .main__title {
+    font: bold 50px/66px 'PT Serif', arial, helvetica, sans-serif;
+    margin: 0 0 41px 0;
+    padding-top: 16px;
+  }
+
+  .main__subtitle {
+    font: 18px/21px'Roboto', arial, helvetica, sans-serif;
+    margin: 0 0 40px 0;
+    letter-spacing: 0.3px;
+  }
+
+  .main__button {
+    font: 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    padding: 17px 22px 12px 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 91%;
+  }
+
+  .logo {
+    padding-left: 44px;
+  }
+
+  .logo__circle {
+    left: 0.5%;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  header {
+    margin-bottom: 87px;
+  }
+
+  .main {
+    padding: 0 54% 20% 0;
+    background-size: 55.5%;
+    background-position: top right;
+  }
+
+  .main__title {
+    margin: 0 0 38px 0;
+  }
+
+  .main__subtitle {
+    margin: 0 0 41px 0;
+  }
+
+  .main__button {
+    padding: 17px 23px 13px 24px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  header {
+    margin-bottom: 7px;
+  }
+
+  .logo {
+    visibility: hidden;
+    padding: 12% 0 0 0;
+    left: 6%;
+  }
+
+  .logo__circle {
+    visibility: visible;
+  }
+
+  .logo__circle_color_blue {
+    left: 5%;
+    top: 58%;
+  }
+
+  .main {
+    padding: 69% 0 0 4px;
+    background-size: 75%;
+    background-position: top center;
+    text-align: center;
+  }
+
+  .main__title {
+    width: 74%;
+    margin: auto;
+    padding-top: 2px;
+    font: bold 30px/40px 'PT Serif', arial, helvetica, sans-serif;
+    margin-bottom: 33px;
+  }
+
+  .main__subtitle {
+    font: 15px/18px'Roboto', arial, helvetica, sans-serif;
+    margin: auto;
+    width: 74%;
+    margin-bottom: 27px;
+    letter-spacing: 0.6px;
+  }
+
+  .menu__btn {
+    position: absolute;
+    top: 5.8%;
+    right: 6.5%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn,
+  .menu__btn::before,
+  .menu__btn::after {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #0056ec;
+  }
+
+  .menu__btn::before {
+    content: '';
+    top: -7px;
+  }
+
+  .menu__btn::after {
+    content: '';
+    top: 7px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 47% 0;
+    background-color: #e5e5e5;
+  }
+
+  .menu__item {
+    margin: auto;
+    display: block;
+    padding: 11px 0 12px 0;
+    font: 500 31px/36px 'Roboto', arial, helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+  }
+
+  .menu__item:hover::after {
+    opacity: 1;
+    width: 0;
+  }
+
+  .menu__item_active::after {
+    display: none;
+  }
 }
